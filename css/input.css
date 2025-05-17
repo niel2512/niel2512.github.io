@@ -28,7 +28,7 @@
     margin-top: 8px;
     margin-bottom: 8px;
     display: block;
-    background-color: #0f172a;
+    background-color: #ff0000;
   }
 
   .hamburger-active > span:nth-child(1) {

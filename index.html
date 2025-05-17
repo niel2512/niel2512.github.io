@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth md:scroll-auto sm:scroll-auto dark">
+<html lang="en" class="scroll-smooth md:scroll-auto sm:scroll-auto">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +9,7 @@
     <link rel="icon" href="img/favicon/favicon2.png" type="icon" />
   </head>
   <body>
-    <div class="dark:bg-black">
+    <div>
       <!-- Start Header -->
       <header class="bg-transparent backdrop-blur-md fixed top-0 left-0 w-full flex items-center z-10">
         <div class="container ml-20 mr-20">
@@ -24,20 +24,34 @@
                 <span class="hamburger-line transition duration-300 ease-in-out"></span>
                 <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
               </button>
-              <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-2 top-full lg:block lg:static lg:max-w-full lg:bg-transparent lg:shadow-none lg:rounded-none">
+              <nav id="nav-menu" class="hidden absolute py-5 bg-black shadow-lg rounded-lg max-w-[250px] w-full right-2 top-full lg:block lg:static lg:max-w-full lg:bg-transparent lg:shadow-none lg:rounded-none">
                 <ul class="block lg:flex">
                   <li class="group">
-                    <a href="#hero" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"><span class="mdi mdi-home"></span> Beranda</a>
+                    <a href="#hero" class="text-base py-2 mx-8 flex group-hover:text-primary text-white"><span class="mdi mdi-home"></span> Beranda</a>
                   </li>
                   <li class="group">
-                    <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"><span class="mdi mdi-clipboard-account"></span> About</a>
+                    <a href="#about" class="text-base py-2 mx-8 flex group-hover:text-primary text-white"><span class="mdi mdi-clipboard-account"></span> About</a>
                   </li>
                   <li class="group">
-                    <a href="#portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"> <span class="mdi mdi-projector-screen-outline"></span> Project</a>
+                    <a href="#portfolio" class="text-base py-2 mx-8 flex group-hover:text-primary text-white"> <span class="mdi mdi-projector-screen-outline"></span> Project</a>
                   </li>
                   <li class="group">
-                    <a href="#skills" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"> <span class="mdi mdi-medal"></span>Skills</a>
+                    <a href="#skills" class="text-base py-2 mx-8 flex group-hover:text-primary text-white"> <span class="mdi mdi-medal"></span>Skills</a>
                   </li>
+                  <!-- dark mode gagal -->
+                  <!-- <li class="flex items-center pl-8">
+                    <div class="flex">
+                      <span class="mr-2 text-sm text-slate-500">Light</span>
+                      <input type="checkbox" class="hidden" id="dark-toggle">
+                      <label for="dark-toggle">
+                        <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                          <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out">
+                          </div>
+                        </div>
+                      </label>
+                      <span class="ml-2 text-sm text-slate-500">Dark</span>
+                    </div>
+                  </li> -->
                 </ul>
               </nav>
             </div>
@@ -47,12 +61,12 @@
       <!-- End Header -->
 
       <!-- Start Hero Section -->
-      <section id="hero" class="pt-10">
+      <section id="hero" class="pt-10 bg-black">
         <div class="container">
           <div class="flex flex-wrap ml-20 mr-20">
             <div class="w-full self-center p-4 lg:w-1/2">
-              <h1 class="text-base font-semibold text-primary md:text-xl lg:text-2xl">Halo Semua👋, Saya<span class="block font-bold text-slate-900 text-4xl mt-1 lg:5xl"> Nathaniel Yusuf Langelo</span></h1>
-              <h2 class="font-medium text-secondary mb-10 leading-relaxed lg:text-2xl">FullStack Developer |<span class="text-black"> Web Development</span></h2>
+              <h1 class="text-base font-semibold text-primary md:text-xl lg:text-2xl">Halo Semua👋, Saya<span class="block font-bold text-white text-4xl mt-1 lg:5xl"> Nathaniel Yusuf Langelo</span></h1>
+              <h2 class="font-medium text-secondary mb-10 leading-relaxed lg:text-2xl">FullStack Web Developer</h2>
               <p class="font-medium text-secondary mb-10 leading-relaxed">Selamat datang di website portfolio saya, silahkan tekan tombol dibawah ini</p>
               <a href="#about" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
                 >Let's Start <span class="mdi mdi-chevron-double-down"></span
@@ -60,8 +74,8 @@
             </div>
             <div class="w-full self-end px-4 lg:w-1/2">
               <div class="relative mt-10 lg:mt-7 lg:right-0">
-                <img src="img/profil.png" alt="Nathaniel Yusuf" class="max-w-full mx-auto my-auto" />
-                <span class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
+                <img src="img/profil.png" alt="Nathaniel Yusuf" class="relative z-10 max-w-full mx-auto my-auto" />
+                <span class="absolute -bottom-0 mb-10 left-1/2 -translate-x-1/2 md:scale-125">
                   <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                     <path
                       fill="#14b8a6"
@@ -78,13 +92,13 @@
       <!-- End Hero Section -->
 
       <!-- Start About Section -->
-      <section id="about" class="pt-36 pb-32 bg-slate-100">
+      <section id="about" class="pt-36 pb-32 bg-slate-800">
         <div class="container">
           <div class="w-full px-4">
             <div class="max-w-xl mx-auto text-center mb-16">
               <h4 class="font-bold text-lg text-primary mb-2 uppercase">About Me</h4>
-              <h2 class="font-bold text-black text-3xl mb-4 sm:text-3xl lg:text-4xl">Hello World...!</h2>
-              <p class="font-medium text-md text-secondary md:text-lg">Perkenalkan nama saya Nathaniel Yusuf Langelo, Saya adalah luluasn D3 Sistem Informasi Akuntansi dan sedang melanjutkan pendidikan S1 Sistem Informasi di Telkom University</p>
+              <h2 class="font-bold text-slate-500 text-3xl mb-4 sm:text-3xl lg:text-4xl">Hello World...!</h2>
+              <p class="font-medium text-md text-white md:text-lg">Perkenalkan nama saya Nathaniel Yusuf Langelo, Saya adalah luluasn D3 Sistem Informasi Akuntansi dan sedang melanjutkan pendidikan S1 Sistem Informasi di Telkom University</p>
             </div>
           </div>
             <!-- <div class="w-full mb-10 lg:w-1/2 mx-auto text-center">
@@ -137,25 +151,24 @@
       <!-- End About Section -->
 
       <!-- Start Portfolio Section -->
-      <section id="portfolio" class="pt-36 pb-16">
+      <section id="portfolio" class="pt-36 pb-2 bg-black">
         <div class="container">
           <!-- Title Page -->
           <div class="w-full px-4">
-            <div class="max-w-xl mx-auto text-center mb-16">
+            <div class="max-w-xl mx-auto text-center mb-12">
               <h4 class="font-semibold text-lg text-primary mb-2 uppercase">Project</h4>
-              <h2 class="font-bold text-black text-3xl mb-4 sm:text-4xl lg:text-5xl">Latest Project</h2>
-              <p class="font-medium text-md text-secondary md:text-lg">Here are all the projects that I have created</p>
+              <h2 class="font-bold text-secondary text-3xl mb-4 sm:text-4xl lg:text-5xl">Latest Project</h2>
+              <p class="font-medium text-md text-white md:text-lg">Here are all the projects that I have created</p>
             </div>
           </div>
-
-          <!-- First Page -->
           <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+            <!-- First Page -->
             <div class="mb-12 p-4 md:w-1/2">
               <div class="rounded-md shadow-md overflow-hidden">
                 <img src="/img/project/contoh (600x300).jpg" alt="contoh project" width="w-full" />
               </div>
               <h3 class="font-semibold text-xl text-black mt-5 mb-3">Ini contoh project</h3>
-              <p class="font-medium text-base text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit aliquam illo esse.</p>
+              <p class="font-medium text-base text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit aliquam illo esse.</p>
             </div>
 
             <!-- Second Page -->
@@ -164,7 +177,7 @@
                 <img src="/img/project/contoh (600x300).jpg" alt="contoh project" width="w-full" />
               </div>
               <h3 class="font-semibold text-xl text-black mt-5 mb-3">Ini contoh project</h3>
-              <p class="font-medium text-base text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit aliquam illo esse.</p>
+              <p class="font-medium text-base text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit aliquam illo esse.</p>
             </div>
 
             <!-- Third Page -->
@@ -173,7 +186,7 @@
                 <img src="/img/project/contoh (600x300).jpg" alt="contoh project" width="w-full" />
               </div>
               <h3 class="font-semibold text-xl text-black mt-5 mb-3">Ini contoh project</h3>
-              <p class="font-medium text-base text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit aliquam illo esse.</p>
+              <p class="font-medium text-base text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit aliquam illo esse.</p>
             </div>
 
             <!-- Fourth Page -->
@@ -182,7 +195,7 @@
                 <img src="/img/project/contoh (600x300).jpg" alt="contoh project" width="w-full" />
               </div>
               <h3 class="font-semibold text-xl text-black mt-5 mb-3">Ini contoh project</h3>
-              <p class="font-medium text-base text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit aliquam illo esse.</p>
+              <p class="font-medium text-base text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit aliquam illo esse.</p>
             </div>
           </div>
         </div>
@@ -195,8 +208,8 @@
           <div class="w-full px-4">
             <div class="mx-auto text-center mb-5">
               <h4 class="font-semibold text-lg text-primary mb-2 uppercase">Skills</h4>
-              <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl">Here are the Programming Skills I Learnt</h2>
-              <p class="font-medium text-md text-secondary md:text-lg">this is the programming languages that i learnt in college</p>
+              <h2 class="font-bold text-secondary text-3xl mb-4 sm:text-4xl lg:text-5xl">Here are the Programming Skills I Learnt</h2>
+              <p class="font-medium text-md text-white md:text-lg">this is the programming languages that i learnt in college</p>
             </div>
           </div>
 
