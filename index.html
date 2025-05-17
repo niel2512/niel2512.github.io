@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth md:scroll-auto sm:scroll-auto dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,12 +9,7 @@
     <link rel="icon" href="img/favicon/favicon2.png" type="icon" />
   </head>
   <body>
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-    </style>
-    <div>
+    <div class="dark:bg-black">
       <!-- Start Header -->
       <header class="bg-transparent backdrop-blur-md fixed top-0 left-0 w-full flex items-center z-10">
         <div class="container ml-20 mr-20">
@@ -85,18 +80,24 @@
       <!-- Start About Section -->
       <section id="about" class="pt-36 pb-32 bg-slate-100">
         <div class="container">
-          <div class="flex flex-wrap ml-20 mr-20">
-            <div class="w-full px-4 mb-10 lg:w-1/2">
-              <h4 class="font-bold uppercase text-primary text-lg mb-3">Tentang Saya</h4>
-              <h2 class="font-bold text-black text-2xl mb-5 max-w-md lg:text-4xl">Ayoo</h2>
-              <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, eaque.</p>
+          <div class="w-full px-4">
+            <div class="max-w-xl mx-auto text-center mb-16">
+              <h4 class="font-bold text-lg text-primary mb-2 uppercase">About Me</h4>
+              <h2 class="font-bold text-black text-3xl mb-4 sm:text-3xl lg:text-4xl">Hello World...!</h2>
+              <p class="font-medium text-md text-secondary md:text-lg">Perkenalkan nama saya Nathaniel Yusuf Langelo, Saya adalah luluasn D3 Sistem Informasi Akuntansi dan sedang melanjutkan pendidikan S1 Sistem Informasi di Telkom University</p>
             </div>
-            <div class="w-full px-4 lg:w-1/2">
+          </div>
+            <!-- <div class="w-full mb-10 lg:w-1/2 mx-auto text-center">
+              <h4 class="font-bold uppercase text-primary text-lg mb-3">Tentang Saya</h4>
+              <h2 class="font-bold text-black text-2xl mb-5 lg:text-4xl">Hello World...!</h2>
+              <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">Perkenalkan nama saya Nathaniel Yusuf Langelo</p>
+            </div> -->
+            <!-- <div class="w-full px-4 lg:w-1/2">
               <h3 class="font-semibold text-black text-2xl mb-4 lg:text-3xl lg:pt-11">Follow Me</h3>
-              <p class="font-medium text-base text-secondary mb-6 lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, maiores!</p>
-              <div class="flex items-center">
-                <!-- Linkedin Icon -->
-                <a
+              <p class="font-medium text-base text-secondary mb-6 lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, maiores!</p> -->
+            <!-- <div class="flex items-center"> -->
+            <!-- Linkedin Icon -->
+            <!-- <a
                   href="https://www.linkedin.com/in/nathaniel-yusuf-langelo/"
                   target="_blank"
                   class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primar hover:bg-primary hover:text-white"
@@ -106,9 +107,9 @@
                       d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"
                     ></path>
                   </svg>
-                </a>
-                <!-- Instagram Icon -->
-                <a
+                </a> -->
+            <!-- Instagram Icon -->
+            <!-- <a
                   href="https://instagram.com/nathaniel.yusuf"
                   target="_blank"
                   class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
@@ -118,18 +119,18 @@
                       d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"
                     ></path>
                   </svg>
-                </a>
-                <!-- Github Icon -->
-                <a href="https://github.com/niel2512" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                </a> -->
+            <!-- Github Icon -->
+            <!-- <a href="https://github.com/niel2512" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
                   <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <title>GitHub</title>
                     <path
                       d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
                     />
                   </svg>
-                </a>
-              </div>
-            </div>
+                </a> -->
+            <!-- </div> -->
+            <!-- </div> -->
           </div>
         </div>
       </section>
@@ -200,24 +201,24 @@
           </div>
 
           <marquee behavior="scroll" direction="left" scrollamount="12" onmouseover="this.stop();" onmouseout="this.start();">
-            <div class="w-full px-4">
+            <div class="w-full px-4 bg">
               <div class="flex flex-wrap items-center justify-center">
-                <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                <a href="#skills" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
                   <img src="/img/skills/HTML.png" alt="HTML" />
                 </a>
-                <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                <a href="#skills" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
                   <img src="/img/skills/Tailwind.png" alt="Tailwind" />
                 </a>
-                <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                <a href="#skills" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
                   <img src="/img/skills/PHP.png" alt="PHP" />
                 </a>
-                <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                <a href="#skills" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
                   <img src="/img/skills/Laravel.png" alt="Laravel" />
                 </a>
-                <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                <a href="#skills" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
                   <img src="/img/skills/Java.png" alt="Java" />
                 </a>
-                <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                <a href="#skilss" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
                   <img src="/img/skills/Python.png" alt="Python" />
                 </a>
               </div>
@@ -388,7 +389,12 @@
         </div>
       </footer>
       <!-- End Footer -->
-    </div>
+
+      <!-- Back to top start -->
+       <!-- <a href="#home" class="fixed bottom-4 right-4 z-[9999] flex justify-center items-center h-14 w-14 rounded-full bg-primary p-4">
+        <span class="block h-5 w-5 border-t-2 border-l-2 rotate-45"></span>
+       </a> -->
+      <!-- End Back to top start -->
     <script src="js/script.js"></script>
   </body>
 </html>
